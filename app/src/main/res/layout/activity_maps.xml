@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapsActivity">
+
+
+    <AutoCompleteTextView
+
+        android:id="@+id/src_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/str_inp_places"
+        android:background="#00000000"
+        android:textColorHint="@color/common_action_bar_splitter"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimary">
+        <requestFocus />
+
+    </AutoCompleteTextView>
+
+
+    <AutoCompleteTextView
+
+        android:id="@+id/des_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/str_inp_places"
+        android:background="#00000000"
+        android:textColorHint="@color/common_action_bar_splitter"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimary">
+        <requestFocus />
+
+    </AutoCompleteTextView>
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bhargavaroyal.com.maps2.MapsActivity" />
+
+
+
+
+
+
+</LinearLayout>
